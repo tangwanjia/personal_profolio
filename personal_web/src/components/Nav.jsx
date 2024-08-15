@@ -2,8 +2,45 @@ import React, { useRef } from "react";
 import navCSS from "./Nav.module.css";
 
 function Nav() {
-  const Menu = useRef();
+  //dark light mode
 
+  const DarkMode = () => {
+    document.querySelector("body").setAttribute("data-theme", "Dark");
+  };
+
+  const LightMode = () => {
+    document.querySelector("body").setAttribute("data-theme", "Light");
+  };
+
+  DarkMode();
+
+  const ThemeHandler = () => {
+    if (document.querySelector("body").getAttribute("data-theme") === "Dark") {
+      LightMode();
+    } else {
+      DarkMode();
+    }
+  };
+
+  // const [theme, setTheme] = useState("Dark");
+
+  // const toggleTheme = () => {
+  //   const newTheme = theme === "Dark" ? "Light" : "Dark";
+
+  //   setTheme(newTheme);
+
+  //   document.querySelector("body").setAttribute("data-theme", newTheme);
+  // };
+
+  // useEffect(() => {
+  //   document.body.setAttribute("data-theme", theme);
+  // }, [theme]);
+
+  // const Menu = useRef();
+  // const menuHandler = () => {
+  //   Menu.current.classList.toggle(navCSS.activeNav);
+  // };
+  const Menu = useRef();
   const menuHandler = () => {
     Menu.current.classList.toggle(navCSS.activeNav);
   };
@@ -53,9 +90,8 @@ function Nav() {
       </ul>
 
       <div className={navCSS.NavBtns}>
-        <i className="ri-moon-line" onClick={menuHandler}></i>
-        <i className="ri-menu-4-line"></i>
-        {/* <i className="ri-menu-4-line" onClick={menuHandler}></i> */}
+        <i className="ri-moon-line" onClick={ThemeHandler}></i>
+        <i className="ri-menu-4-line" onClick={menuHandler}></i>
       </div>
     </div>
   );
