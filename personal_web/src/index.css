@@ -23,7 +23,7 @@ body {
   --bg-color: #191c26;
   --nav-txt-bg: rgba(255, 255, 255, 0.08);
   --primary-color: #ce6b6b;
-  --button-bg: rgba(255, 255, 255, 0.5);
+  --button-bg: rgba(36, 36, 36, 0.995);
 }
 
 [data-theme="Light"] {
@@ -33,7 +33,7 @@ body {
   --bg-color: #f5f8fc;
   --nav-txt-bg: rgba(230, 241, 255, 0.5);
   --primary-color: #ce6b6b;
-  --button-bg: rgba(0, 0, 0, 0.2);
+  --button-bg: rgba(237, 236, 236, 0.995);
 }
 
 @media screen and (max-width: 1100px) {
@@ -66,4 +66,122 @@ body {
     padding: 16px 20px;
     font-size: 15px;
   }
+}
+@media screen and (max-width: 900px) {
+  .headerWrapper .headerContainer img {
+  }
+}
+
+button {
+  height: 45px;
+  width: 140px;
+  border: none;
+  background-color: var(--button-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-color);
+  position: relative;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--primary-color);
+}
+
+button span {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+button span::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 15px;
+  background-color: var(--Light-color);
+}
+
+button span::before {
+  content: "";
+  position: absolute;
+  height: 15px;
+  width: 1px;
+  background-color: var(--Light-color);
+}
+
+button span:nth-of-type(2) {
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+
+button span:nth-of-type(2):after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 1px;
+  width: 15px;
+  background-color: var(--Light-color);
+}
+button span:nth-of-type(2):before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 15px;
+  width: 1px;
+  background-color: var(--Light-color);
+}
+
+button span:nth-of-type(3) {
+  position: absolute;
+  top: 0;
+  left: 100%;
+}
+
+button span:nth-of-type(3):after {
+  content: "";
+  position: absolute;
+  right: 0;
+  height: 1px;
+  width: 15px;
+  background-color: var(--Light-color);
+}
+button span:nth-of-type(3):before {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 15px;
+  width: 1px;
+  background-color: var(--Light-color);
+}
+button span:nth-of-type(4) {
+  position: absolute;
+  top: 100%;
+  left: 100%;
+}
+
+button span:nth-of-type(4):after {
+  content: "";
+  position: absolute;
+  right: 0;
+  height: 1px;
+  width: 15px;
+  background-color: var(--Light-color);
+}
+button span:nth-of-type(4):before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 15px;
+  width: 1px;
+  background-color: var(--Light-color);
+}
+
+.section {
+  padding: 80px 12%;
+  display: flex;
+  flex-direction: column;
 }
