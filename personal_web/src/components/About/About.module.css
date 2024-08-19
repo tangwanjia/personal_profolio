@@ -1,0 +1,19 @@
+.AboutWrapper {
+  flex-direction: row;
+}
+
+.aboutContainer {
+  width: 50%;
+}
+
+.AboutImg {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.AboutImg img {
+  width: 80%;
+  height: 80%;
+}

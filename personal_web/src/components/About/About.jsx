@@ -18,35 +18,21 @@ function About() {
         <div className={aboutCSS.skil}>
           <h3>JavaScript</h3>
           <div className={aboutCSS.line}></div>
+          <h3>HTML</h3>
+          <div className={aboutCSS.line}></div>
+          <h3>React</h3>
+          <div className={aboutCSS.line}></div>
+          <h3>Figma</h3>
+          <div className={aboutCSS.line}></div>
+          <h3>Network</h3>
+          <div className={aboutCSS.line}></div>
+          <h3>PhotoShop</h3>
+          <div className={aboutCSS.line}></div>
+          <h3>Illustrator</h3>
+          <div className={aboutCSS.line}></div>
+          <h3>Premiere</h3>
+          <div className={aboutCSS.line}></div>
         </div>
-      </div>
-      <div className={aboutCSS.skil}>
-        <h3>HTML</h3>
-        <div className={aboutCSS.line}></div>
-      </div>
-      <div className={aboutCSS.skil}>
-        <h3>React</h3>
-        <div className={aboutCSS.line}></div>
-      </div>
-      <div className={aboutCSS.line}>
-        <h3>Figma</h3>
-        <div className={aboutCSS.line}></div>
-      </div>
-      <div className={aboutCSS.skil}>
-        <h3>Network</h3>
-        <div className={aboutCSS.line}></div>
-      </div>
-      <div className={aboutCSS.skil}>
-        <h3>PhotoShop</h3>
-        <div className={aboutCSS.line}></div>
-      </div>
-      <div className={aboutCSS.skil}>
-        <h3>Illustrator</h3>
-        <div className={aboutCSS.line}></div>
-      </div>
-      <div className={aboutCSS.skil}>
-        <h3>Premiere</h3>
-        <div className={aboutCSS.line}></div>
       </div>
 
       <div className={aboutCSS.AboutImg}>
