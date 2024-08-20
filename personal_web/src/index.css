@@ -24,16 +24,18 @@ body {
   --nav-txt-bg: rgba(255, 255, 255, 0.08);
   --primary-color: #ce6b6b;
   --button-bg: rgba(36, 36, 36, 0.995);
+  --pera-color: rgba(255, 255, 255, 0.6);
 }
 
 [data-theme="Light"] {
-  --dark-color: #f8f8f8;
-  --Light-color: #000;
+  --dark-color: #e5e5e0;
+  --Light-color: #1a1818f5;
   --text-color: #1e1e1e;
-  --bg-color: #f5f8fc;
-  --nav-txt-bg: rgba(230, 241, 255, 0.5);
+  --bg-color: #f3edd1;
+  --nav-txt-bg: #4694c5;
   --primary-color: #ce6b6b;
   --button-bg: rgba(237, 236, 236, 0.995);
+  --pera-color: rgba(0, 0, 0, 0.6);
 }
 
 @media screen and (max-width: 1100px) {
