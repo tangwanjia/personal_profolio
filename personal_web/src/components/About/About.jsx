@@ -1,6 +1,14 @@
 import React from "react";
 import aboutCSS from "./../About/About.module.css";
-import ocean from "./../../assets/ocean.jpg";
+import jspic from "./../../assets/jspic.png";
+import premier from "./../../assets/premier.png";
+import illu from "./../../assets/illu.png";
+import photo from "./../../assets/photo.png";
+import react from "./../../assets/react.png";
+import figmapic from "./../../assets/figmapic.png";
+import github from "./../../assets/github.png";
+import db from "./../../assets/db.png";
+import htmlpic from "./../../assets/htmlpic.png";
 
 function About() {
   return (
@@ -52,10 +60,15 @@ function About() {
       </div>
 
       <div className={aboutCSS.AboutImg}>
-        <img src={ocean} alt="ocean" />
-        <div className={aboutCSS.Exp}>
-          <h2>1+ of Experience </h2>
-        </div>
+        <img src={jspic} alt="jspic" />
+        <img src={premier} alt="premier" />
+        <img src={illu} alt="illu" />
+        <img src={photo} alt="photoshop" />
+        <img src={react} alt="react" />
+        <img src={figmapic} alt="figmapic" />
+        <img src={github} alt="github" />
+        <img src={db} alt="db" />
+        <img src={htmlpic} alt="htmlpic" />
       </div>
     </div>
   );

@@ -58,7 +58,7 @@
 }
 
 .skilWrapper .skil:hover .line:hover {
-  box-shadow: 0 0 20px #8196a6;
+  box-shadow: 0 0 20px #969898;
 }
 
 .skilWrapper .skil:nth-of-type(2) .line::after {
@@ -82,13 +82,17 @@
 
 .AboutImg {
   width: 70%;
-  /* height: 480px; */
+  /* height: 70%; */
   display: flex;
   align-items: center;
   justify-content: end;
+  position: relative;
+  flex-wrap: wrap;
+  gap: 1px 94px;
+  position: relative;
 }
 
 .AboutImg img {
-  width: 500px;
+  width: 160px;
   height: auto;
 }
