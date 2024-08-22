@@ -3,7 +3,7 @@ import serviceCSS from "./../Serv/Serv.module.css";
 
 function Service() {
   return (
-    <div className={`${serviceCSS.ServiceWrapper} section`}>
+    <div className={`${serviceCSS.ServiceWrapper} section`} id="Serv">
       <h2>What I do</h2>
       <p className={serviceCSS.pera}>xxxxxxxxxx</p>
 

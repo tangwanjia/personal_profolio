@@ -3,7 +3,7 @@ import portfolioCSS from "./../Portf/portfolio.module.css";
 
 function Portfolio() {
   return (
-    <div className={`${portfolioCSS.PortfWrapper} section`}>
+    <div className={`${portfolioCSS.PortfWrapper} section`} id="Portft">
       <h1>Portfolio</h1>
     </div>
   );

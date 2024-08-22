@@ -88,3 +88,22 @@ textarea {
   font-size: 25px;
   font-weight: 300;
 }
+
+.ContactInfo .card h3 {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+@media screen and (max-width: 900px) {
+  .ContactContainer {
+    flex-direction: column;
+  }
+
+  .ContactInfo .Contactform {
+    width: 100%;
+  }
+
+  .Contactform .inputWrapper input {
+    height: 48px;
+  }
+}

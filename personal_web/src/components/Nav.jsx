@@ -22,6 +22,13 @@ function Nav() {
     }
   };
 
+  const Navbar = useRef();
+  window.addEventListener("scroll", function () {
+    if (this.window.scrollY > 100) {
+      Navbar.current.classList.add(navCSS.navbarScroll);
+    }
+  });
+
   // const [theme, setTheme] = useState("Dark");
 
   // const toggleTheme = () => {
@@ -46,40 +53,34 @@ function Nav() {
   };
 
   return (
-    <div className={navCSS.Nav}>
+    <div className={navCSS.Nav} ref={Navbar}>
       <div className={navCSS.logo}>
         <a href="#">Claire Wanjia Tang</a>
       </div>
 
       <ul ref={Menu}>
         <li>
-          <a href="#">
+          <a href="#Home">
             <i className="ri-home-3-line"></i>Home
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="#About">
             <i className="ri-user-line"></i>About
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="#Serv">
             <i className="ri-instance-line"></i>Service
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="#Portft">
             <i className="ri-id-card-line"></i>Portfolio
           </a>
         </li>
-
         <li>
-          <a href="#">
-            <i className="ri-news-line"></i>Blogs
-          </a>
-        </li>
-        <li>
-          <a href="#">
+          <a href="#Contact">
             <i className="ri-phone-line"></i>Contact
           </a>
         </li>

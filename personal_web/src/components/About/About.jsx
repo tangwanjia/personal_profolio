@@ -12,7 +12,7 @@ import htmlpic from "./../../assets/htmlpic.png";
 
 function About() {
   return (
-    <div className={`${aboutCSS.AboutWrapper} section`}>
+    <div className={`${aboutCSS.AboutWrapper} section`} id="About">
       <div className={aboutCSS.aboutContainer}>
         <h2>About Me</h2>
         <p>

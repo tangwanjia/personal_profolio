@@ -9,3 +9,9 @@
   justify-content: center;
   background: #ddd; /* 测试背景色 */
 }
+
+@media screen and (max-width: 768px) {
+  .portfolioWrapper .pera {
+    width: 100%;
+  }
+}

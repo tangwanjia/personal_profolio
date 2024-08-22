@@ -3,7 +3,7 @@ import contactCSS from "./../Contact/Contact.module.css";
 
 function Contact() {
   return (
-    <div className={`${contactCSS.ContactWrapper} section`}>
+    <div className={`${contactCSS.ContactWrapper} section`} id="Contact">
       <h2>Contact Me</h2>
       <p className={contactCSS.pera}>XXXXXX</p>
 

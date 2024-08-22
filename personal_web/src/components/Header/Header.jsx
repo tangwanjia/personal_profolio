@@ -4,7 +4,7 @@ import flower from "./../../assets/flower.jpg";
 
 function Header() {
   return (
-    <div className={headerCSS.headerWrapper}>
+    <div className={headerCSS.headerWrapper} id="Home">
       <div className={headerCSS.headerContainer}>
         <img src={flower} alt="flower" />
         <h1>

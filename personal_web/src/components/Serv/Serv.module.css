@@ -84,4 +84,12 @@
   .ServiceCards .ServiceCard {
     height: 280px;
   }
+
+  .ServiceCards .ServiceCard {
+    height: 320px;
+  }
+
+  .ServiceWrapper .pera {
+    width: 100%;
+  }
 }
