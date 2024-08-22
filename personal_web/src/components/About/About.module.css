@@ -118,7 +118,7 @@
 
   @media screen and (max-width: 900px) {
     .AboutImg img {
-      width: 100%;
+      width: 30%;
     }
   }
 }
