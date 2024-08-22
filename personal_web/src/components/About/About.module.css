@@ -96,3 +96,29 @@
   width: 160px;
   height: auto;
 }
+
+@media screen and (max-width: 1100px) {
+  .headerWrapper {
+    flex-direction: column-reverse !important;
+  }
+
+  .headerContainer {
+    width: 100%;
+    margin-top: 80px;
+  }
+
+  .AboutImg {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .AboutImg img {
+    width: 80%;
+  }
+
+  @media screen and (max-width: 900px) {
+    .AboutImg img {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,42 @@
+.ServiceWrapper {
+  gap: 5px;
+}
+
+.ServiceWrapper h2 {
+  font-size: 32px;
+  line-height: 30px;
+}
+
+.ServiceWrapper .pera {
+  width: 60%;
+}
+
+.ServiceCards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  gap: 30px;
+}
+
+.ServiceCards .ServiceCard {
+  width: 100%;
+  padding: 25px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ServiceCards .ServiceCard i {
+  font-size: 48px;
+}
+.ServiceCards .ServiceCard h4 {
+  display: flex;
+
+  align-items: center;
+  font-weight: 500;
+}
+
+.ServiceCards .ServiceCard h4 i {
+  font-size: 48px;
+  margin-top: 22px;
+}
