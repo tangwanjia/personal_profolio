@@ -72,11 +72,7 @@ function Nav() {
             <i className="ri-id-card-line"></i>Portfolio
           </a>
         </li>
-        <li>
-          <a href="#">
-            <i className="ri-group-line"></i> Testimonial
-          </a>
-        </li>
+
         <li>
           <a href="#">
             <i className="ri-news-line"></i>Blogs

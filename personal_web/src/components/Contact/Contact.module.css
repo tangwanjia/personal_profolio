@@ -1,0 +1,90 @@
+.ContactWrapper {
+  gap: 18px;
+  color: var(--text-color);
+}
+
+.ContactWrapper .pera {
+  width: 60%;
+  margin-bottom: 30px;
+}
+
+.ContactWrapper h2 {
+  font-size: 28px;
+  line-height: 30px;
+}
+
+.ContactContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  align-items: stretch;
+}
+.ContactInfo,
+.Contactform {
+  flex: 1; /* 确保两者有相同的基础宽度 */
+  padding: 20px; /* 可选，确保内边距一致 */
+}
+.ContactInfo {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.Contactform {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 30px;
+  /* height: 440px; */
+  background-color: var(--bg-color);
+}
+
+.Contactform h3 {
+  font-size: 28px;
+}
+
+.Contactform .inputWrapper {
+  min-height: 48px;
+  width: 100%;
+}
+
+.Contactform .inputWrapper input,
+textarea {
+  height: 100%;
+  width: 100%;
+  padding: 0 14px;
+  outline: none;
+  border: none;
+}
+
+textarea {
+  height: 140px;
+  margin-bottom: 12px;
+}
+
+.Contactform button {
+  font-weight: 500;
+}
+
+.ContactInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.ContactInfo .card {
+  padding: 20px 30px;
+  background-color: var(--bg-color);
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.ContactInfo .card i {
+  font-size: 25px;
+  font-weight: 300;
+}

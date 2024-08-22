@@ -1,0 +1,11 @@
+.swiper {
+  width: 100%; /* 确保 Swiper 容器占满可用宽度 */
+  height: 300px; /* 设置固定高度 */
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ddd; /* 测试背景色 */
+}
