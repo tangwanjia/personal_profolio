@@ -23,7 +23,7 @@ function Contact() {
           </div>
         </div>
         <div className={contactCSS.Contactform}>
-          <h3> Let's GET In Touch</h3>
+          <h3> Let's Get In Touch</h3>
           <div className={contactCSS.inputWrapper}>
             <input type="text" placeholder="Name*" />
           </div>

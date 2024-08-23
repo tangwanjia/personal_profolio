@@ -1,16 +1,41 @@
-.swiper {
-  width: 100%; /* 确保 Swiper 容器占满可用宽度 */
-  height: 300px; /* 设置固定高度 */
+.PortfWrapper {
+  padding: 50px 0;
 }
 
-.swiper-slide {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #ddd; /* 测试背景色 */
+.Worklist {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
 }
 
-@media screen and (max-width: 768px) {
+.WorkProject {
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.WorkProject img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  height: 180px;
+  transition: transform 0.5s;
+}
+
+.Worklist .WorkProject h3 {
+  color: var(--text-color);
+}
+
+.Worklist .WorkProject p {
+  color: var(--text-color);
+}
+
+.Worklist .WorkProject:hover img {
+  transform: scale(1.1);
+}
+
+.PortfWrapper @media screen and (max-width: 1400px) {
   .portfolioWrapper .pera {
     width: 100%;
   }
