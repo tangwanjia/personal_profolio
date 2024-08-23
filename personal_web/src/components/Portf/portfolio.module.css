@@ -31,6 +31,10 @@
   color: var(--text-color);
 }
 
+.Worklist .WorkProject i {
+  color: var(--text-color);
+}
+
 .Worklist .WorkProject:hover img {
   transform: scale(1.1);
 }
