@@ -13,15 +13,14 @@ function Header() {
         <p>
           Welcome to my page, I am <strong>Front-end Developer</strong>
           <br />
-          looking for a position in website designer and various computer
-          languages, good in js, react, network and database
+          With passion for coding and a focus on product and web design.
         </p>
         <div className={headerCSS.social}>
           <i className="ri-linkedin-line"></i>
           <i className="ri-github-line"></i>
         </div>
         <button>
-          Download CV
+          Download Resume
           <span></span>
           <span></span>
           <span></span>

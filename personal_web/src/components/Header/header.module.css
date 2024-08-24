@@ -78,3 +78,7 @@
 .headerWrapper .headerContainer .social i:hover {
   background-color: var(--primary-color);
 }
+
+.headerWrapper .headerContainer button {
+  font-size: 13px;
+}
