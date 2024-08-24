@@ -44,6 +44,7 @@
 
 .ServiceCards .ServiceCard p {
   color: var(--text-color);
+  font-size: 14px;
 }
 .ServiceCards .ServiceCard i {
   font-size: 28px;

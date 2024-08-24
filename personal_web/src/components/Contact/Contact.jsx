@@ -5,7 +5,10 @@ function Contact() {
   return (
     <div className={`${contactCSS.ContactWrapper} section`} id="Contact">
       <h2>Contact Me</h2>
-      <p className={contactCSS.pera}>XXXXXX</p>
+      <p className={contactCSS.pera}>
+        I usually response within 24 hours, I will get back to you as soon as I
+        can!!!!
+      </p>
 
       <div className={contactCSS.ContactContainer}>
         <div className={contactCSS.ContactInfo}>
