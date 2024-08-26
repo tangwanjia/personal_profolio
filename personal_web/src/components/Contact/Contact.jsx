@@ -1,5 +1,27 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 import contactCSS from "./../Contact/Contact.module.css";
+
+export const ContactUs = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm("service_kp2wxyb", "template_1ynn5dl", form.current, {
+        publicKey: "CCXJzRcjct1U6xBo1",
+      })
+      .then(
+        () => {
+          console.log("SUCCESS!");
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      );
+  };
+};
 
 function Contact() {
   return (
@@ -27,21 +49,24 @@ function Contact() {
         </div>
         <div className={contactCSS.Contactform}>
           <h3> Let's Get In Touch</h3>
-          <div className={contactCSS.inputWrapper}>
-            <input type="text" placeholder="Name*" />
-          </div>
-          <div className={contactCSS.inputWrapper}>
-            <input type="email" placeholder="Email*" />
-          </div>
-          <textarea placeholder="Message"></textarea>
 
-          <button>
-            Submit
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
+          <form onSubmit={"sendEmail"} ref={form}>
+            <div className={contactCSS.inputWrapper}>
+              <input type="text" name="name" placeholder="Name*" required />
+            </div>
+            <div className={contactCSS.inputWrapper}>
+              <input type="email" name="email" placeholder="Email*" required />
+            </div>
+            <textarea name="message" placeholder="Message" required></textarea>
+
+            <button>
+              Submit
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </form>
         </div>
       </div>
     </div>
