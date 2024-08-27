@@ -20,7 +20,7 @@
   },
   "homepage": "https://tangwanjia.github.io/personal_web/",
   "Scripts": {
-    "predeploy": "npm run build",
+    "predeploy": "npm run dev",
     "deploy": "gh-pages -d out"
   },
   "devDependencies": {
