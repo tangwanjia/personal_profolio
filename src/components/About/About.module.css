@@ -90,6 +90,7 @@
   flex-wrap: wrap;
   gap: 1px 94px;
   position: relative;
+  /* transform: scale(1.1); */
 }
 
 .AboutImg img {
