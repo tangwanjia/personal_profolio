@@ -89,11 +89,12 @@ function About() {
         <img src={github} alt="github" />
         <img src={htmlpic} alt="htmlpic" />
         <img src={powerapp} alt="powerapp" />
-        <img src={illu} alt="illu" />
+
         <img src={plateform} alt="plateform" />
         <img src={figmapic} alt="figmapic" />
         <img src={audi} alt="audi" />
         <img src={premier} alt="premier" />
+        <img src={illu} alt="illu" />
         <img src={ani} alt="ani" />
         <img src={photo} alt="photoshop" />
       </div>
