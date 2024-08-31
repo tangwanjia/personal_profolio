@@ -91,7 +91,6 @@ function About() {
         <img src={powerapp} alt="powerapp" />
         <img src={illu} alt="illu" />
         <img src={plateform} alt="plateform" />
-
         <img src={jspic} alt="jspic" />
         <img src={audi} alt="audi" />
         <img src={premier} alt="premier" />

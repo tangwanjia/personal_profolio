@@ -3,6 +3,16 @@ import headerCSS from "./../Header/header.module.css";
 import flower from "./../../assets/flower.jpg";
 
 function Header() {
+  const resume = () => {
+    const pdfURL = "claire.pdf";
+    const link = document.createElement("a");
+    link.href = pdfURL;
+    link.download = "claire.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <div className={headerCSS.headerWrapper} id="Home">
       <div className={headerCSS.headerContainer}>
@@ -19,7 +29,7 @@ function Header() {
           <i className="ri-linkedin-line"></i>
           <i className="ri-github-line"></i>
         </div>
-        <button>
+        <button onClick={resume} className={headerCSS.cv}>
           Download Resume
           <span></span>
           <span></span>
