@@ -26,8 +26,12 @@ function Header() {
           With passion for coding and a focus on product and web design.
         </p>
         <div className={headerCSS.social}>
-          <i className="ri-linkedin-line"></i>
-          <i className="ri-github-line"></i>
+          <a href="https://www.linkedin.com/in/claire-tang-760187a1/">
+            <i className="ri-linkedin-line"></i>
+          </a>
+          <a href="https://github.com/tangwanjia">
+            <i className="ri-github-line"></i>
+          </a>
         </div>
         <button onClick={resume} className={headerCSS.cv}>
           Download Resume
