@@ -3,6 +3,7 @@ import emailjs from "emailjs-com";
 import contactCSS from "./../Contact/Contact.module.css";
 
 function Contact() {
+  const formRef = useRef();
   function sendEmail(event) {
     event.preventDefault();
 
@@ -15,10 +16,14 @@ function Contact() {
       )
       .then(
         (result) => {
-          console.log("SUCCESS!", result);
+          alert(
+            "Thank you for your message, I will contact you ASAP! have a nice day",
+            result
+          );
         },
         (error) => {
-          console.log("FAILED...", error.text);
+          alert("Ops, would you mind trying again? thank you", error);
+          formRef.current.reset();
         }
       );
   }
@@ -46,10 +51,11 @@ function Contact() {
             <h3>Toronttttt, ON, Canada </h3>
           </div>
         </div>
+
         <div className={contactCSS.Contactform}>
           <h3> Let's Get In Touch</h3>
 
-          <form onSubmit={sendEmail} action="">
+          <form onSubmit={sendEmail} ref={formRef}>
             <div className={contactCSS.inputWrapper}>
               <input type="text" name="name" placeholder="Name*" required />
             </div>
@@ -58,7 +64,7 @@ function Contact() {
             </div>
             <textarea name="message" placeholder="Message" required></textarea>
 
-            <button>
+            <button type="submit">
               Submit
               <span></span>
               <span></span>
