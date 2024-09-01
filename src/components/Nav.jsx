@@ -88,7 +88,7 @@ function Nav() {
 
       <div className={navCSS.NavBtns}>
         <i className="ri-moon-line" onClick={ThemeHandler}></i>
-        <i className="ri-menu-4-line" onClick={menuHandler}></i>
+        {/* <i className="ri-menu-4-line" onClick={menuHandler}></i> */}
       </div>
     </div>
   );
