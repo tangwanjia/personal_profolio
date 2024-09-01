@@ -1,29 +1,28 @@
 import React, { useRef } from "react";
-import emailjs from "@emailjs/browser";
+import emailjs from "emailjs-com";
 import contactCSS from "./../Contact/Contact.module.css";
 
-// export const ContactUs = () => {
-//   const form = useRef();
-
-//   const sendEmail = (e) => {
-//     e.preventDefault();
-
-//     emailjs
-//       .sendForm("service_kp2wxyb", "template_1ynn5dl", form.current, {
-//         publicKey: "CCXJzRcjct1U6xBo1",
-//       })
-//       .then(
-//         () => {
-//           console.log("SUCCESS!");
-//         },
-//         (error) => {
-//           console.log("FAILED...", error.text);
-//         }
-//       );
-//   };
-// };
-
 function Contact() {
+  function sendEmail(event) {
+    event.preventDefault();
+
+    emailjs
+      .sendForm(
+        import.meta.env.VITE_EMAIL_SERVICE_ID,
+        import.meta.env.VITE_EMAIL_TEMPLATE_ID,
+        event.target,
+        import.meta.env.VITE_EMAIL_USER_ID
+      )
+      .then(
+        (result) => {
+          console.log("SUCCESS!", result);
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      );
+  }
+
   return (
     <div className={`${contactCSS.ContactWrapper} section`} id="Contact">
       <h2>Contact Me</h2>
@@ -50,7 +49,7 @@ function Contact() {
         <div className={contactCSS.Contactform}>
           <h3> Let's Get In Touch</h3>
 
-          <form onSubmit={"sendEmail"}>
+          <form onSubmit={sendEmail} action="">
             <div className={contactCSS.inputWrapper}>
               <input type="text" name="name" placeholder="Name*" required />
             </div>
