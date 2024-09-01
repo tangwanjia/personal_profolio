@@ -20,32 +20,28 @@ function Portfolio() {
             <i className="ri-external-link-line"></i>
           </a>
         </div>
-        <div className={portfolioCSS.WorkProject}>
-          <img src={travel} alt="travel" />
 
+        <div className={portfolioCSS.WorkProject}>
+          <a href="https://www.figma.com/proto/tRuaOj9SjgQDoFUye9rjyg/Wireframes?page-id=136%3A631&node-id=237-705&starting-point-node-id=237%3A705&t=Hk0ce9w2pEan3obi-1">
+            <img src={travel} alt="travel" />
+          </a>
           <h3>Trave Web</h3>
           <p>Figma</p>
-          <a href="#">
-            <i className="ri-external-link-line"></i>
-          </a>
         </div>
-        <div className={portfolioCSS.WorkProject}>
-          <img src={coop} alt="coop" />
 
+        <div className={portfolioCSS.WorkProject}>
+          <a href="https://www.figma.com/proto/kxoKkbRPWWyNVzy3pWe4kv/Untitled?page-id=0%3A1&node-id=1-2&node-type=FRAME&viewport=536%2C679%2C0.5&t=u7uOFESHOs1MAaps-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=1%3A2">
+            <img src={coop} alt="coop" />
+          </a>
           <h3> Kudo </h3>
           <p>React</p>
-          <a href="#">
-            <i className="ri-external-link-line"></i>
-          </a>
         </div>
         <div className={portfolioCSS.WorkProject}>
-          <img src={shoppin} alt="shoppin" />
-
+          <a href="https://www.figma.com/proto/5TzDJuDAi5TFb2Jo5KWjaE/TASK?node-id=105-509&node-type=FRAME&t=8u4I4wVydF8tuCMU-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=105%3A722">
+            <img src={shoppin} alt="shoppin" />
+          </a>
           <h3> Shopping cart (Mobile App) </h3>
           <p>React</p>
-          <a href="#">
-            <i className="ri-external-link-line"></i>
-          </a>
         </div>
       </div>
     </div>
