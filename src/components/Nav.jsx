@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import navCSS from "./Nav.module.css";
+import logo from "./../assets/logo.png";
 
 function Nav() {
   //dark light mode
@@ -55,7 +56,8 @@ function Nav() {
   return (
     <div className={navCSS.Nav} ref={Navbar}>
       <div className={navCSS.logo}>
-        <a href="#">Claire Wanjia Tang</a>
+        {/* <a href="#">Claire Wanjia Tang</a> */}
+        <img src={logo} alt="logo" />
       </div>
 
       <ul ref={Menu}>

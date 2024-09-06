@@ -7,12 +7,9 @@
   padding: 0 10%;
 }
 
-.Nav .logo a {
-  font-size: 26px;
-  font-weight: 600;
-  color: #4694c5;
-  padding: 500px 0 0 0;
-  font-family: Snell Roundhand, cursive;
+.Nav .logo img {
+  width: 220px;
+  height: auto;
 }
 
 .NavBtns {
